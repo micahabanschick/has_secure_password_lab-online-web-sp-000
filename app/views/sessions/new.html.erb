@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 <h1>Login or Signup</h1>
 
 <%= form_for @user do |f| %>
+=======
+<%= form_for :user, url: '/users' do |f| %>
+>>>>>>> 70d7c4c836894d9fed5c6d660247fce4c32a2f22
   Username: <%= f.text_field :name %>
   Password: <%= f.password_field :password %>
   Password Confirmation: <%= f.password_field :password_confirmation %>

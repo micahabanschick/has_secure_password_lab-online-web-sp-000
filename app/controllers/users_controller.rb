@@ -3,6 +3,7 @@ class UsersController < ApplicationController
   end
 
   def create
+<<<<<<< HEAD
     @user = User.new(user_params)
     if @user.save
       session[:user_id] = @user.id
@@ -10,6 +11,9 @@ class UsersController < ApplicationController
     else
       redirect_to users_new_path
     end
+=======
+    User.create(user_params)
+>>>>>>> 70d7c4c836894d9fed5c6d660247fce4c32a2f22
   end
 
   private
